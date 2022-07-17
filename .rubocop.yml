@@ -1,0 +1,82 @@
+require: rubocop-rails
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - bin/**/*
+    - contrib/**/*
+    - db/**/*
+    - tmp/**/*
+    - node_modules/**/*
+    - config/**/*
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - development
+    - staging
+    - uat
+
+Layout/LineLength:
+  Max: 200
+
+Style/Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+HasAndBelongsToMany:
+  Enabled: false
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+Metrics/AbcSize:
+  Max: 35
+
+Metrics/MethodLength:
+  Max: 125
+
+Metrics/BlockLength:
+  Max: 125
+
+Metrics/ClassLength:
+  Enabled: false
+  Max: 125
+
+Rails/FindEach:
+  Enabled: false
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
+Style/ExponentialNotation:
+  Enabled: true
+
+Rails/FindBy:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+Naming/MethodParameterName:
+  MinNameLength: 2
+
+Layout/EndAlignment:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Max: 8
